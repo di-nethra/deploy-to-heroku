@@ -1,12 +1,37 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import Book from "./Book";
+import { BookDetails1, BookDetails2, BookDetails3 } from "./BookDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello</p>
-      </header>
+    <div>
+      <h1>Book list still baking...</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 text-center">
+            <Book
+              src={BookDetails1.src}
+              title={BookDetails1.title}
+              author={BookDetails1.author}
+            />
+          </div>
+          <div className="col-lg-4 text-center">
+            <Book
+              src={BookDetails2.src}
+              title={BookDetails2.title}
+              author={BookDetails2.author}
+            />
+          </div>
+
+          <div className="col-lg-4 text-center">
+            <Book
+              src={BookDetails3.src}
+              title={BookDetails3.title}
+              author={BookDetails3.author}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
