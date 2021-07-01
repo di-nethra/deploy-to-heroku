@@ -32,6 +32,7 @@ function App() {
           </div>
         </div>
       </div>
+      <p className="copyright text-center">Copyrights © Dinethrex 2021</p>
     </div>
   );
 }
